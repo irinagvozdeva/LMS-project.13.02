@@ -1,4 +1,4 @@
-package view;
+package com.company.model.view.course;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,7 +11,7 @@ public class AddCourseFrame extends JFrame {
         setLayout(new FlowLayout());
         add(new AddCoursePanel());
 
-        setVisible(true);
+        setVisible(false);
 
     }
 }

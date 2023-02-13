@@ -1,6 +1,9 @@
-package view;
+package com.company.model.view.course;
 
-import model.Student;
+import com.company.model.Student;
+import com.company.model.view.MainFrame;
+import repository.CourseRepository;
+import repository.StudentRepository;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -18,8 +21,10 @@ public class AddCoursePanel extends JPanel {
             public void actionPerformed(ActionEvent e) {
                 if (!title.getText().isEmpty() && !description.getText().isEmpty()) {
                     new Student(title.getText(), description.getText());
+                    CourseRepository.insert(title.getText(), description.getText());
                     title.setText("");
                     description.setText("");
+                    MainFrame.addCourseFrame.setVisible(false);
                 }
             }
         });
