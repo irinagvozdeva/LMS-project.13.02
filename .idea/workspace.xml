@@ -4,34 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="892c67e9-d97a-4e7a-a963-8757a4cee869" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/view/MainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/view/MainMenuBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/view/course/ChoiceCourse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/view/course/CourseJPopUpMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/view/student/AddStudentFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/model/view/student/AddStudentPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repository/CourseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repository/EnrollmentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/repository/StudentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/student/StudentJPopUpMenu.java" afterDir="false" />
+    <list default="true" id="892c67e9-d97a-4e7a-a963-8757a4cee869" name="Changes" comment="13.02">
+      <change afterPath="$PROJECT_DIR$/src/com/company/model/view/course/CourseListFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/model/view/student/StudentListFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AddStudentPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/AddStudentPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LMS-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LMS-project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/AcademicPerformance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/AcademicPerformance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/CourseEnrollment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/CourseEnrollment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/MainFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/MainMenuBar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/course/AddCourseFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/view/course/AddCourseFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/course/AddCoursePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/view/course/AddCoursePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/course/CourseListPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/view/course/CourseListPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/student/AddStudentFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/student/AddStudentPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/student/StudentListPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/view/student/StudentListPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/CourseEnrollment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/CourseEnrollment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/model/view/course/CourseJPopUpMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/view/course/CourseJPopUpMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/EnrollmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/EnrollmentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/student/StudentJPopUpMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/student/StudentJPopUpMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +75,14 @@
       <option name="presentableId" value="Default" />
       <updated>1673461136521</updated>
     </task>
+    <task id="LOCAL-00001" summary="13.02">
+      <created>1676299152653</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676299152653</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,5 +95,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="13.02" />
+    <option name="LAST_COMMIT_MESSAGE" value="13.02" />
   </component>
 </project>

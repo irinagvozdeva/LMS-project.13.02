@@ -2,6 +2,7 @@ package com.company.model;
 
 import com.company.model.view.MainFrame;
 import repository.CourseRepository;
+import repository.EnrollmentRepository;
 import repository.StudentRepository;
 
 import java.sql.Connection;
@@ -14,5 +15,5 @@ public class Main {
        public static void main(String[] args) {
            StudentRepository.getAll();
            CourseRepository.getAll();
-
+           EnrollmentRepository.getAll();
        }}

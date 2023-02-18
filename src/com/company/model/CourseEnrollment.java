@@ -1,5 +1,7 @@
 package com.company.model;
 
+import repository.EnrollmentRepository;
+
 import java.util.ArrayList;
 
 public class CourseEnrollment {
@@ -12,7 +14,16 @@ public class CourseEnrollment {
     private static int lastID;
 
     public CourseEnrollment(Student student, Course course) {
+        System.out.println("Произошло зачисление");
         this.id = ++lastID;
+        this.student = student;
+        this.course = course;
+        list.add(this);
+        EnrollmentRepository.insertEnrollment(student.getId(), course.getId());
+    }
+
+    public CourseEnrollment(int id, Student student, Course course){
+        this.id = id;
         this.student = student;
         this.course = course;
         list.add(this);

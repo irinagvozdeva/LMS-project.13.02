@@ -68,7 +68,7 @@ public class StudentRepository {
         }
     }
     public static void deleteStudent(int id){
-        String query = "delete students where id=?";
+        String query = "delete from students where id=?";
         try {
             Connection connection = DriverManager.getConnection(url, login, password);
             PreparedStatement statement = connection.prepareStatement(query);
@@ -83,5 +83,6 @@ public class StudentRepository {
             System.out.println(e.getMessage());
         }
     }
+
 }
 

@@ -21,10 +21,11 @@ public class EnrollmentRepository {
 
             while (resultSet.next()) {
                 String id = resultSet.getString("id");
-                String studentId = resultSet.getString("studentid");
-                String courseId = resultSet.getString("courseid");
-            //    new CourseEnrollment(Integer.parseInt(id), Student.getStudentById(studentId), Course.getCourseById(courseId));
-            }
+                int studentId = resultSet.getInt("studentid");
+                int courseId = resultSet.getInt("courseid");
+                if(Student.getStudentById(studentId) != null && Course.getCourseById(courseId) != null){
+                new CourseEnrollment(Integer.parseInt(id), Student.getStudentById(studentId), Course.getCourseById(courseId));
+            }}
             connection.close();
 
         } catch (Exception e) {
@@ -33,14 +34,14 @@ public class EnrollmentRepository {
         }
     }
 
-    public static void insert(String name, String surname) {
-        String query = "insert into students(name, surname) values(?, ?)";
+    public static void insertEnrollment(int studentId, int courseId) {
+        String query = "insert into enrollments(studentid, courseid) values(?, ?)";
         try {
             Connection connection = DriverManager.getConnection(url, login, password);
             PreparedStatement statement = connection.prepareStatement(query);
 
-            statement.setString(1, name);
-            statement.setString(2, surname);
+            statement.setInt(1, studentId);
+            statement.setInt(2, courseId);
             statement.executeUpdate();
 
             connection.close();

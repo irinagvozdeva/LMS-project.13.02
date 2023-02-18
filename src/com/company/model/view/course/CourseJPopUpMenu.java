@@ -2,6 +2,8 @@ package com.company.model.view.course;
 
 
 import com.company.model.Course;
+import com.company.model.Student;
+import com.company.model.view.student.StudentListFrame;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -13,8 +15,8 @@ public class CourseJPopUpMenu extends JPopupMenu {
     public CourseJPopUpMenu(JTable table){
         this.table = table;
         add(createItem("Сохранить", "save"));
-        //add(createItem("Зачислить на курс", "enroll"));
         add(createItem("Удалить", "delete"));
+        add(createItem("Показать студентов", "showStudents"));
     }
     JMenuItem createItem(String title, String command){
         JMenuItem item = new JMenuItem(title);
@@ -31,12 +33,11 @@ public class CourseJPopUpMenu extends JPopupMenu {
             String title = table.getValueAt(index, 1).toString();
             String description = table.getValueAt(index, 2).toString();
 
-            switch(e.getActionCommand()){
-                case "save":
-                    Course.update(id, index, title, description);
-                    break;
-                case "delete":
-                    Course.delete(id, index);
+            switch (e.getActionCommand()) {
+                case "save" -> Course.update(id, index, title, description);
+                case "delete" -> Course.delete(id, index);
+                case "showStudents" -> new StudentListFrame(Course.getCourseById(id));
+                default -> System.err.println("Не удалось обработать команду");
             }
 
         }

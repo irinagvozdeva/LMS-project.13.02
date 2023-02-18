@@ -124,4 +124,17 @@ public class Student {
         return new CourseEnrollment(this,course);
 
     }
+    public static DefaultTableModel getModelStudent(Course course){
+        DefaultTableModel model = new DefaultTableModel(headers,0);
+        for (Student student : course.getStudent()) {
+            model.addRow(
+                    new Object[]{
+                            student.getId(),
+                            student.getName(),
+                            student.getSurname()
+                    }
+            );
+        }
+        return model;
+    }
 }

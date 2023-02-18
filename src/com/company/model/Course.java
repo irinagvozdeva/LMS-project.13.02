@@ -1,8 +1,10 @@
 package com.company.model;
 
+import repository.CourseRepository;
 import repository.StudentRepository;
 
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableModel;
 import java.util.ArrayList;
 
 public class Course {
@@ -26,6 +28,35 @@ public class Course {
         this.setProperties(title, description);
     }
 
+    public static DefaultTableModel getModelCourses(Student student){
+        DefaultTableModel model = new DefaultTableModel(headers,0);
+        for (Course course : student.getCourses()) {
+          model.addRow(
+                  new Object[]{
+                          course.getId(),
+                          course.getTitle(),
+                          course.getDescription()
+                  }
+          );
+        }
+        return model;
+    }
+
+    public static TableModel getModelCourse(Student student) {
+        DefaultTableModel model = new DefaultTableModel(headers,0);
+        for (Course course  : student.getCourses()) {
+            model.addRow(
+                    new Object[]{
+                            course.getId(),
+                            course.getTitle(),
+                            course.getDescription()
+                    }
+            );
+        }
+        return model;
+    }
+
+
     public void setProperties(String title, String description){
         this.title = title;
         this.description = description;
@@ -45,7 +76,7 @@ public class Course {
     public static void update(int id, int index, String title, String description) {
         list.get(index).title = title;
         list.get(index).description = description;
-        StudentRepository.updateStudent(id, title, description);
+        CourseRepository.updateCourse(id, title, description);
     }
 
     public static void delete(int id, int index) {
